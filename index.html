@@ -4,29 +4,27 @@
 :root{--ink:#e9f6ff;--paper:#0b1933;--gold:#ffcf65;--forest:#102a55;--line:#426c9e}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.5 Nunito,system-ui,sans-serif}h1,h2,h3,p{margin:0}h1,h2,h3{font-family:Georgia,serif;line-height:1.04}a{color:inherit}button{font:inherit;color:inherit}button,.cta{cursor:pointer;border:0;border-radius:100px;padding:.7rem 1.15rem;font-weight:850;text-decoration:none;display:inline-block;background:var(--gold);color:var(--ink)}button:focus-visible,a:focus-visible{outline:3px solid #ffcf65;outline-offset:4px}.wrap{width:min(1200px,92%);margin:auto}header{background:var(--paper);border-bottom:1px solid var(--line)}nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{font-family:Georgia,serif;font-weight:bold;text-decoration:none;font-size:clamp(16px,3vw,23px)}.brand span{margin-right:8px}.hero{color:var(--paper);background:radial-gradient(ellipse at 73% 58%,#275b96,transparent 58%),var(--forest);overflow:hidden}.hero .wrap{display:grid;grid-template-columns:1fr .9fr;align-items:center;min-height:540px;gap:50px;padding:55px 0}.kicker{font-size:.74rem;text-transform:uppercase;letter-spacing:.19em;font-weight:900;color:#ffcf65}.hero .kicker{color:var(--gold)}h1{font-size:clamp(3.2rem,7.1vw,6.5rem);letter-spacing:-.065em;margin:16px 0 20px}h1 em{font-weight:normal;color:var(--gold)}.hero p:not(.kicker){max-width:380px;margin-bottom:26px;color:#d6eeff}.art{position:relative;display:grid;place-items:center;isolation:isolate}.art:before{content:"";position:absolute;width:95%;aspect-ratio:1;border:1px dashed #9ed9ff99;border-radius:50%;z-index:-1}.art img{display:block;width:60%;max-width:300px;border:5px solid #9ed9ff;border-radius:8px;transform:rotate(8deg);box-shadow:0 18px 45px #06142bcc}.paw{position:absolute;color:#ffcf65;font-size:2.3rem;transform:rotate(-20deg);left:4%;bottom:15%}.spark{position:absolute;color:#ffcf65;font-size:3rem;right:6%;top:9%}.shelf{padding:65px 0}.heading{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:26px}h2{font-size:clamp(2.3rem,5vw,4rem);letter-spacing:-.045em;margin-top:6px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:#142a4b;border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}.cover{display:grid;place-items:center;padding:20px;background:var(--back)}.cover img{width:100%;height:auto;aspect-ratio:2/3;object-fit:contain;filter:drop-shadow(3px 6px 7px #06142b99)}.info{padding:17px;display:flex;flex-direction:column;flex:1;gap:12px}.info h3{font-size:1.28rem}.buy{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto}.buy button{padding:.45rem .75rem;font-size:.9rem}strong{font-weight:900}footer{padding:24px 0;background:var(--forest);color:var(--paper)}dialog{width:min(520px,94%);max-height:85vh;border:1px solid var(--line);border-radius:18px;background:var(--paper);color:var(--ink);padding:24px}dialog::backdrop{background:#06142be0}.cart-head,.cart-row{display:flex;justify-content:space-between;align-items:center;gap:12px}.cart-head h2{font-size:2rem}.cart-row{border-bottom:1px solid var(--line);padding:12px 0}.cart-row button,.close{background:#244c78;padding:.3rem .7rem}.cart-foot{margin-top:16px}.cart-foot p{margin-top:8px}.status{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:var(--ink);color:white;border-radius:24px;padding:7px 16px;z-index:2}.status:empty{display:none}@media(max-width:760px){.hero .wrap{grid-template-columns:1fr;gap:26px}.art img{width:48%}.art:before{width:65%}.grid{grid-template-columns:repeat(2,1fr)}.heading{display:block}}@media(max-width:400px){.grid{gap:8px}.cover,.info{padding:10px}.buy button{padding:.35rem .5rem}}
 .extras{padding-top:0}.buy{flex-wrap:wrap}
 button,.cta{color:#132746}.cart-row button,.close{color:var(--ink)}.hero,footer{color:var(--ink)}.status{background:#244c78;color:#fff}
-.plush-photo{padding:0}.plush-photo img{display:block;aspect-ratio:3/2;object-fit:cover;filter:none}
-.plush-photo img[src$='chase-stuffy.png']{object-fit:contain}
+
+
 .cart-row{flex-wrap:wrap}.cart-row>span{flex:1 0 100%}
+.service-photo{padding:12px;background:#204267}.service-photo img{aspect-ratio:4/3;object-fit:contain}
 </style>
 <header><nav class="wrap"><a class="brand" href="#"><span aria-hidden="true">🔎</span>Pet Detective Bookshop</a><button id="open-cart" type="button">Cart (<span id="count">0</span>)</button></nav></header>
-<main><section class="hero"><div class="wrap"><div><p class="kicker">Stories by Kiah James</p><h1>Little paws.<br><em>Big mysteries.</em></h1><p>Grab your magnifying glass and follow Toby, Chase, and Beau into a world of clues, curious pets, and adventures.</p><a class="cta" href="#books">Explore the books ↓</a></div><div class="art"><span class="paw" aria-hidden="true">🐾</span><img src="assets/book-0.jpg" alt="Toby and Chase dressed as detectives on the cover of Toby &amp; Chase Are on the Case"><span class="spark" aria-hidden="true">✦</span></div></div></section>
+<main><section class="hero"><div class="wrap"><div><p class="kicker">Stories by Kiah James</p><h1>Little paws.<br><em>Big mysteries.</em></h1><p>Grab your magnifying glass and follow Toby, Chase, and Beau into a world of clues, curious pets, and adventures.</p><a class="cta" href="#books">Explore the books ↓</a></div><div class="art"><span class="paw" aria-hidden="true">🐾</span><img src="https://toby-beau-images.netlify.app/.netlify/images?url=%2Fimg%2Ftoby-and-chase-on-the-case-cover.jpg&amp;w=1200&amp;fm=webp" alt="Toby and Chase dressed as detectives on the cover of Toby &amp; Chase Are on the Case"><span class="spark" aria-hidden="true">✦</span></div></div></section>
 <section class="wrap shelf" id="books"><div class="heading"><div><p class="kicker">The bookshelf</p><h2>Pick your next adventure</h2></div><p>Written and illustrated by Kiah James</p></div><div class="grid" id="books-grid"></div></section>
-<section class="wrap shelf extras" id="shop" aria-labelledby="extras-title"><div class="heading"><h2 id="extras-title">Services &amp; stuffies</h2></div><div class="grid" id="extras-grid"></div></section></main>
+<section class="wrap shelf extras" id="shop" aria-labelledby="extras-title"><div class="heading"><h2 id="extras-title">Services</h2></div><div class="grid" id="extras-grid"></div></section></main>
 <footer><div class="wrap">Pet Detective Bookshop · Kiah James<br>Contact: <a href="mailto:freetobe.askme@gmail.com">freetobe.askme@gmail.com</a></div></footer>
 <dialog id="cart" aria-labelledby="cart-title"><div class="cart-head"><h2 id="cart-title">Your cart</h2><form method="dialog"><button class="close" aria-label="Close cart">✕</button></form></div><div id="lines"></div><div class="cart-foot"><strong id="subtotal"></strong><p><a class="cta" href="https://buy.stripe.com/bJe14oefF6Sd0CV2pY6kg0a">Pay with Stripe</a></p><p>Select your items and quantities on Stripe, then confirm the total before paying.</p></div></dialog><div class="status" role="status" id="status"></div>
 <script>
+const bookCovers = ["https://toby-beau-images.netlify.app/.netlify/images?url=%2Fimg%2Ftoby-and-chase-on-the-case-cover.jpg&w=1200&fm=webp","https://toby-beau-images.netlify.app/.netlify/images?url=%2Fimg%2Fbeaus-cat-tales-cover.jpg&w=1200&fm=webp","https://toby-beau-images.netlify.app/.netlify/images?url=%2Fimg%2Ftoby-and-chase-case-of-mr-whiskers-cover.jpg&w=1200&fm=webp","https://toby-beau-images.netlify.app/.netlify/images?url=%2Fimg%2Fbeaus-cat-tales-visitors-cover.jpg&w=1200&fm=webp"];
 const products = [
   {name:'Toby & Chase Are on the Case',price:12.99,color:'#1a3b69'},
   {name:'Beau’s Cat Tales',price:12,color:'#204b74'},
   {name:'Toby & Chase Are on the Case: The Case of Mr. Whiskers',price:10,color:'#254672'},
   {name:'Beau’s Cat Tales: Visitors',price:12,color:'#204267'},
-  {name:'Book reading or book signing',price:30},
-  {name:'Personalized books',price:20},
-  {name:'Toby Stuffy',price:5,photo:'assets/toby-stuffy.png',photoAlt:'Black and white Toby plush dog wearing a black fedora'},
-  {name:'Chase Stuffy',price:5,photo:'assets/chase-stuffy.png',photoAlt:'Cream-colored Chase plush dog wearing a black bowler hat and blue collar'},
-  {name:'Beau Stuffy',price:5,photo:'assets/beau-stuffy.png',photoAlt:'Black and white Beau plush cat with a red bow tie'},
-  {name:'Lucy',price:5,photo:'assets/lucy-stuffy.png',photoAlt:'Tan Lucy plush dog holding a pink bunny'},
-  {name:'Buddy',price:5,photo:'assets/buddy-stuffy.png',photoAlt:'Orange Buddy plush lizard with a cricket on its tongue'}
+  {name:'Book reading or book signing',price:30,photo:'https://toby-beau-images.netlify.app/.netlify/images?url=%2Fimg%2Fbook-signing-flyer.jpg&w=1200&fm=webp',photoAlt:'Book signing flyer featuring Kiah James and her four books'},
+  {name:'Personalized books',price:20,photo:'https://toby-beau-images.netlify.app/.netlify/images?url=%2Fimg%2Fpersonalized-books.jpg&w=1200&fm=webp',photoAlt:'Illustration of a reader with Toby and Chase and a personalized book'},
+  {name:'Toby, Chase, and Beau: The Next Chapter',price:12,color:'#204267',photo:'https://6b0914fa97658f1565841b3a--toby-beau-images.netlify.app/.netlify/images?url=%2Fimg%2Ftoby-chase-and-beau-the-next-chapter.png&w=1200&fm=webp',photoAlt:'Cover of Toby, Chase, and Beau: The Next Chapter'}
 ];
 const money = amount => '$' + amount.toFixed(2);
 const grid = document.querySelector('#books-grid');
@@ -35,9 +33,10 @@ const lines = document.querySelector('#lines');
 const status = document.querySelector('#status');
 let quantities = {};
 try {
-  const saved = JSON.parse(localStorage.getItem('pet-detective-cart-v2') ?? localStorage.getItem('pet-detective-cart'));
+  const currentCart = localStorage.getItem('pet-detective-cart-v3');
+  const saved = JSON.parse(currentCart ?? localStorage.getItem('pet-detective-cart-v2') ?? localStorage.getItem('pet-detective-cart'));
   products.forEach((_, index) => {
-    if ((index < 6 || localStorage.getItem('pet-detective-cart-v2') !== null) && Number.isSafeInteger(saved?.[index]) && saved[index] > 0) quantities[index] = saved[index];
+    if ((index < 6 || currentCart !== null) && Number.isSafeInteger(saved?.[index]) && saved[index] > 0) quantities[index] = saved[index];
   });
 } catch {}
 let announcement;
@@ -72,7 +71,7 @@ function renderCart() {
 }
 function updateCart() {
   try {
-    localStorage.setItem('pet-detective-cart-v2', JSON.stringify(quantities));
+    localStorage.setItem('pet-detective-cart-v3', JSON.stringify(quantities));
   } catch {}
   renderCart();
 }
@@ -90,10 +89,11 @@ products.forEach(({name, price, color, photo, photoAlt}, index) => {
   if (color || photo) {
     if (color) card.style.setProperty('--back', color);
     const cover = document.createElement('div');
-    cover.className = photo ? 'cover plush-photo' : 'cover';
+    cover.className = index === 4 || index === 5 ? 'cover service-photo' : 'cover';
     const image = document.createElement('img');
-    image.src = photo || 'assets/book-' + index + '.jpg';
-    image.alt = photoAlt || '';
+    image.src = photo || bookCovers[index];
+    image.alt = photoAlt || ('Cover of ' + name);
+    image.loading = 'lazy';
     cover.append(image);
     card.append(cover);
   }
